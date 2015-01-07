@@ -1,6 +1,7 @@
 /***************************************************************** 
  * Sense Your City
- * Upload data to Localdata servers from Seeeduino Cloud
+ * Upload data to Localdata servers from Seeeduino Cloud.
+ * Part of the DataCanvas Project. More info at DataCanvas.org
  * 
  * Development environment specifics:
  *     IDE: Arduino >= 1.5.6-r2
@@ -27,9 +28,8 @@
  * THE SOFTWARE.
  *****************************************************************/
 
+#include <Process.h>     // Process.h is used to construct Shell commands and read the results.
 #include <avr/pgmspace.h>
-#include <Process.h>        // Process.h gives us access to the Process class, which can be
-                            // used to construct Shell commands and read the response.
 #include <DHT.h>
 #include <Wire.h>
 #include <Digital_Light_TSL2561.h>
@@ -37,7 +37,9 @@
 /* User Configuration */
 #define USER_ID             "USER_ID_GOES_HERE" 
 #define PRIVATE_KEY         "PRIVATE_KEY_GOES_HERE"
-#define LNGLAT              "[37.7902370,-122.2300810]"    // Get your LONGITUDE, LARTITUDE at http://mygeoposition.com/
+#define LNGLAT              "[37.7902370,-122.2300810]"    // Get your LONGITUDE, LATITUDE at http://mygeoposition.com/
+
+// Check your data --> https://localdata-sensors.herokuapp.com/api/sources/USER_ID_GOES_HERE/entries?startIndex=0&count=100000 
 
 /*Define sensor locations on Grove */
 #define pin_uv              A2      // UV sensor
@@ -92,7 +94,7 @@ int32_t lux_last_valid = 0;
 
 /* Global varibles */
 unsigned long push_starttime;
-unsigned long push_interval = 30000;  //ms
+unsigned long push_interval = 10000;  //ms
 
 //////////////////
 // CURL Request //
@@ -102,8 +104,6 @@ const char curlClose[] PROGMEM = " }'  https://localdata-sensors.herokuapp.com/a
 const char latlng[] PROGMEM = LNGLAT; 
 const char userId[] PROGMEM = USER_ID;
 const char privateKey[] PROGMEM = PRIVATE_KEY;
-
-// Check your data at this link -- https://localdata-sensors.herokuapp.com/api/sources/USER_ID_GOES_HERE/entries?startIndex=0&count=100000 
 
 // How many data fields are in your stream?
 const int NUM_FIELDS = 10;
