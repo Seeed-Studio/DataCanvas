@@ -92,7 +92,7 @@ For this part you might want to have some extra tools on hand. You don’t *need
 
 *Note: To secure the sensors in place and affix them to the case, I used a bit of **[dual lock adhesiv*e](http://www.amazon.com/Clear-Dual-Lock-Velcro-Adhesive/dp/B00EEDWSC2)* to keep all the parts in place. You can also use velcro, or, if in a bind, electrical tape.*
 
-![image alt text](image_1.jpg)
+![image alt text](/images/image_1.jpg)
 
 ## First, put the Seeeduino inside of the box. 
 
@@ -118,7 +118,7 @@ It should be facing upwards towards the top of the case (where the tab with thre
 
 The sensors are shaped so can put them together like a puzzle, you can tape them together with a single piece of adhesive and attach them to the case. 
 
-![image alt text](image_2.jpg)
+![image alt text](/images/image_2.jpg)
 
 ## Run the antenna outside of the left hole on the bottom of the box, peel off the adhesive backing, and secure it to the case. 
 
@@ -132,7 +132,7 @@ If the case does not slide on easily, you will need to tidy up your wires and ma
 
 The sensor will should be able to hang vertically from the USB cable. We don’t want it to turn upside down and expose the vulnerable sensors on the outside of the case to water or the elements, so make sure the USB cable is well secured between two of the holes. I also taped the cable to the back of the sensor as well.  
 
-** **![image alt text](image_3.jpg)
+** **![image alt text](/images/image_3.jpg)
 
 ## Add some pizzazz to your sensor by decorating the cover of your sensor node.
 
@@ -144,13 +144,13 @@ The cover is your own blank canvas, draw some futuristic abstract weather patter
 
 You will also need to acquire a private key from Localdata, which will be assigned to you individually. Each sensor has its own unique Public ID and Private Key so that we can identify all unique data streams, we will also incorporate GPS coordinates, to plot all the sensors on a map.  
 
-![image alt text](image_4.png)
+![image alt text](/images/image_4.png)
 
 ## Download and install Arduino 1.5.8 software from [http://arduino.cc/en/Main/Software](http://arduino.cc/en/Main/Software).
 
 Windows has an easy installer. For the Mac OS X version, drag the app to your applications folder, I had most success with the Mac OS X Zip file for Java 6, Arduino prompted me to install a version of Java 6 - I did so and had no problems after doing so. 
 
- ![image alt text](image_5.png)
+ ![image alt text](/images/image_5.png)
 
 ## Plug your sensor node into a computer with the USB cable.
 
@@ -164,7 +164,7 @@ After a few moments, check your wifi settings and look for an available network 
 
 In a web browser, go to the following address: [192.168.240.1](http://192.168.240.1). This is the default IP address of your Seeeduino, in the next step you will give it a name, which will allow you to connect to it by directing your web browser to your_name_here.local
 
-  ![image alt text](image_6.png)
+  ![image alt text](/images/image_6.png)
 
 ….
 
@@ -172,13 +172,13 @@ In a web browser, go to the following address: [192.168.240.1](http://192.168.24
 
 Give your board a name, something catchy, anything that you will remember. Create a password that is at least 8 characters. Select your Wifi Network from the list of "Detected Wireless Networks," enter your Wifi network’s password. If you ever move your Seeeduino to another wifi network you will need to repeat this process, and change the Wireless Parameters accordingly. 
 
- ** **![image alt text](image_7.png)
+ ** **![image alt text](/images/image_7.png)
 
 ## Click the "Configure and Restart" button
 
 The Seeeduino will restart and log on to your wireless network. If you had to plug your sensor directly into a router with an Ethernet cable earlier, you should now be able to remove it. 
 
-## ![image alt text](image_8.png)
+## ![image alt text](/images/image_8.png)
 
 ## Disconnect your computer from the Seeeduino wireless network and connect your computer to your usual wifi network. 
 
@@ -192,69 +192,69 @@ You should see the same Arduino Yun interface as before, this time on your own w
 
 It should open in the Arduino IDE (Integrated Development Environment).
 
-![image alt text](image_9.png)
+![image alt text](/images/image_9.png)
 
 ## Add the libraries in your sense_your_city folder to your local Arduino Library.
 
 You can do this two ways. The easiest way is to copy the two folders located in *sense_your_city/libraries* to your Arduino library folder. On OS X the local Arduino library is located at */Users/yourusername/Documents/Arduino/libraries. *
 
-![image alt text](image_10.png)
+![image alt text](/images/image_10.png)
 
  
 
 ## The standard way to add libraries is by using the "Add Library…" function found in the “Sketch” menu in the Arduino IDE.
 
-Go to Sketch > Import Library… > Add Library…   ![image alt text](image_11.png)
+Go to Sketch > Import Library… > Add Library…   ![image alt text](/images/image_11.png)
 
 ## Add both of the folders included in the *sense_your_city/libraries* to you Arduino Library.
 
 Select each folder individually and click "Choose."
 
-![image alt text](image_12.png)
+![image alt text](/images/image_12.png)
 
 If the library was added, the Arduino IDE will display that it was successful.
 
-  ![image alt text](image_13.png)
+  ![image alt text](/images/image_13.png)
 
 ## Confirm that your computer is configured for your board.
 
 Go to Tools > Board > Arduino Yún 
 
-![image alt text](image_14.png)
+![image alt text](/images/image_14.png)
 
  Next go to Tools >  Port > /dev/tty.usbmodem (Arduino Yún)
 
-![image alt text](image_15.png)
+![image alt text](/images/image_15.png)
 
 ## Make the necessary modifications to the sense_your_city.ino file.
 
 First, copy your user ID and private key into the space provided. 
 
-## ![image alt text](image_16.png)
+## ![image alt text](/images/image_16.png)
 
 ## Add your GPS Coordinates
 
 Go to [mygeoposition.com](http://mygeoposition.com/) and enter the address where the sensornode will be installed. Click the "Calculate geodata" button. Click the “Copy (x,y)” button to copy your GPS coordinates to paste into the Arduino IDE. 
 
-![image alt text](image_17.png)
+![image alt text](/images/image_17.png)
 
 ## Reverse GPS Coordinates.
 
 After pasting you coordinates, make sure to reverse them so longitude is first and latitude is second.
 
-## ![image alt text](image_18.png)
+## ![image alt text](/images/image_18.png)
 
 ## Verify and upload the code.
 
 Click the check button to verify that the code modifications you made are OK. Next, click the play button to upload your code to the Seeeduino Cloud.
 
-![image alt text](image_19.png)
+![image alt text](/images/image_19.png)
 
 ## Open the serial monitor, to make sure the connection is working. 
 
 Goto Tools > Serial Monitor. If everything is working, you will see new window that contains incoming communication from the Seeeduino, including verification that you are uploading online. 
 
-![image alt text](image_20.png)
+![image alt text](/images/image_20.png)
 
 ## Check the server to verify that your code is uploading.  
 
@@ -262,7 +262,7 @@ In a web browser, go to the following address: [https://localdata-sensors.heroku
 
 Be sure to change USER_ID_GOES_HERE to the user ID you received. Press your browser’s reload button several times over the course of several minutes to make sure data is uploading online. Data should be uploading about every 30 seconds or so. If everything is working, do a super funky celebration dance.  
 
-![image alt text](image_21.png)
+![image alt text](/images/image_21.png)
 
 # Node Installation
 
@@ -276,7 +276,7 @@ You can use any standard USB port to supply your sensor with power, just make su
 
 At Gray Area, I used a utility clip to secure the USB cord to a ledge outside. Perhaps the best way to hang your sensor is to secure the USB cord to an object inside your dwelling and hang the sensor out your window. At SEEED Studios, the sensor hung outside our office window, the USB cable was secured and clipped to a desk inside. There are many ingenious ways to make sure that your node does not fall down to the ground and cause a tragic accident.
 
-![image alt text](image_22.png)![image alt text](image_23.png)
+![image alt text](/images/image_22.png)![image alt text](/images/image_23.png)
 
 ## Once your sensor is installed, double check to make sure it is still uploading data online. 
 
