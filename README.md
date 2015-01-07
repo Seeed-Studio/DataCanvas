@@ -1,4 +1,4 @@
-# Sense Your City - Seeeduino Setup Instructions
+# Sense Your City: Seeeduino Setup Instructions
 
 ##### Open the package, lay out all the items on the table in front of you. 
 
