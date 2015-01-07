@@ -92,7 +92,7 @@ int32_t lux_last_valid = 0;
 
 /* Global varibles */
 unsigned long push_starttime;
-unsigned long push_interval = 10000;  //ms
+unsigned long push_interval = 30000;  //ms
 
 //////////////////
 // CURL Request //
