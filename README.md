@@ -90,8 +90,8 @@ For this part, you might want to use some Velcro, 3M Dual Lock, or adhesive tape
 
 9. Use a wire tie, string, or tape to attach the USB cable to the middle tab at the top of the case. The sensor will should be able to hang vertically from the USB cable. We don’t want it to turn upside down and expose the vulnerable sensors on the outside of the case to water or harsh weather. Make sure the USB cable is well secured between two of the three holes. For extra precaution, you can tape the Micro USB cable to the back of the senso 
 
-##III. Program the sensor node!     
-   [image alt text](/images/image_5.png)
+##III. Program the sensor node     
+   ![image alt text](/images/image_5.png)
 
 1. Before getting started, download the code resources at: [https://github.com/Seeed-Studio/DataCanvas/archive/master.zip](https://github.com/Seeed-Studio/DataCanvas/archive/master.zip)
 
