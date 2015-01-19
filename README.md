@@ -1,34 +1,25 @@
-Sense Your City  ![image alt text](/images/image_0.png)
+![image alt text](/images/image_0.png)
+#Sense Your City Sensor Instructions 
 
-What’s in the box:                  
+##What’s in the box:                  
 
 You should have the following:
 
 * 1 [Seeeduino](http://www.seeedstudio.com/wiki/Seeeduino_v3.0)
-
 * 1 [Grove Base-Shield](http://www.seeedstudio.com/wiki/Grove_-_Base_Shield_V1.3)
-
 * 6 Grove Sensors (with jumper cables):
-
     * [Digital Light Sensor ](http://www.seeedstudio.com/wiki/Grove_-_Light_Sensor)
-
     * [Sound Sensor](http://www.seeedstudio.com/wiki/index.php?title=Twig_-_Sound_Sensor) 
-
     * [Temperature & Humidity](http://www.seeedstudio.com/wiki/Grove_-_Temperature_and_Humidity_Sensor_Pro) 
-
     * [Air Quality Sensor](http://www.seeedstudio.com/wiki/Grove_-_Air_Quality_Sensor)
-
     * [UV Sensor](http://www.seeedstudio.com/wiki/Grove_-_UV_Sensor) 
-
     * [Dust Sensor  ](http://www.seeedstudio.com/wiki/Grove_-_Dust_sensor)
-
 * 1 Weather Resistant Sensor Housing 
-
 * 1 Micro USB Cable           
 
-        ![image alt text](/images/image_1.png)    
+![image alt text](/images/image_1.png)    
 
-I. Sensor Assembly   
+##I. Sensor Assembly   
 
 1. Plug the Grove Base Shield into the Seeeduino. The black Grove base shield fits perfectly on top of the red Seeeduino. Do not too push too hard on the Grove base—even when it is plugged in completely there is some space between the two boards.
 
@@ -69,14 +60,15 @@ I. Sensor Assembly
   </tr>
 </table>
 
-
-      ![image alt text](/images/image_2.png)
+![image alt text](/images/image_2.png)
 
 6. We have three different types of sensors. Some sensors are Analog, hence the "A" labeled ports. Analog sensors output a voltage between 0V and 5V, and we use that output to deduce the physical input to the sensor. Some sensors of our sensors are Digital, hence the “D” labelled ports. Digital sensors output data in 1’s and 0’s that computers, such as our Seeeduino, can easily understand. Finally, some sensors communicate over I2C, which allows bidirectional communication between the sensor and the computer.
 
 7. Plug the micro USB cable into the Seeeduino. The small end of the Micro USB cable goes into the red Seeeduino. Later on, we will plug the other end into our computer to program our Seeeduino.          
 
-![image alt text](/images/image_3.png)II. Install the sensor in the case
+![image alt text](/images/image_3.png)
+
+##II. Install the sensor in the case
 
 For this part, you might want to use some Velcro, 3M Dual Lock, or adhesive tape to keep your sensors in place. You don’t need any of these supplies, but they will make your housing more secure and neat. For your reference, the top of the plastic housing has a tab with three small holes, the bottom of the housing has two large holes. This housing will protect our electronics from water and weather, but will also allow our sensors to measure the environment outside the case, through the two large holes on the bottom.
 
@@ -100,7 +92,7 @@ For this part, you might want to use some Velcro, 3M Dual Lock, or adhesive tape
 
 9. Use a wire tie, string, or tape to attach the USB cable to the middle tab at the top of the case. The sensor will should be able to hang vertically from the USB cable. We don’t want it to turn upside down and expose the vulnerable sensors on the outside of the case to water or harsh weather. Make sure the USB cable is well secured between two of the three holes. For extra precaution, you can tape the Micro USB cable to the back of the senso 
 
-III. Program the sensor node![image alt text](/images/image_5.png)
+##III. Program the sensor node![image alt text](/images/image_5.png)
 
 1. Before getting started, download the code resources at: [https://github.com/Seeed-Studio/DataCanvas/archive/master.zip](https://github.com/Seeed-Studio/DataCanvas/archive/master.zip)
 
@@ -172,9 +164,9 @@ Insert the user ID and private key sent to you by Localdata in the space provide
 
 [http://localdata-sensors.herokuapp.com/api/v1/sources/](http://localdata-sensors.herokuapp.com/api/v1/sources/)**[USER_ID_GOES_HER**E](http://localdata-sensors.herokuapp.com/api/v1/sources/)[/entries?startIndex=0&count=5&sort=](http://localdata-sensors.herokuapp.com/api/v1/sources/)**[des**c](http://localdata-sensors.herokuapp.com/api/v1/sources/)
 
-Be sure to change YOUR_USER_ID_GOES_HERE to the user ID you received from Localdata. Press your browser’s reload button several times over the course of several minutes to make sure data is uploading online. Data should be uploading about every 30 seconds or so. If everything is working, do a super funky victory dance!                    
-
-IV. Node Installation![image alt text](/images/image_17.png)
+Be sure to change YOUR_USER_ID_GOES_HERE to the user ID you received from Localdata. Press your browser’s reload button several times over the course of several minutes to make sure data is uploading online. Data should be uploading about every 30 seconds or so. If everything is working, do a super funky victory dance!                 
+##IV. Node Installation
+![image alt text](/images/image_17.png)
 
 After we have confirmed that our sensor is successfully uploading data to the web, we are ready to install it outside. Place the sensor somewhere interesting - a busy street corner, near a public transit station, next to a public park, etc. Make sure the sensor is always safe from harsh weather conditions. If terrible weather is in the local forecast, it is probably a good idea to unplug or move your sensor somewhere safer. If you do decide to move your sensor, don’t forget to reconfigure the wireless settings and make sure to update your new GPS coordinates in the sense_your_city.ino Arduino code.
 
@@ -182,7 +174,7 @@ After we have confirmed that our sensor is successfully uploading data to the we
 
 2. Install your sensor outside, hanging it from the USB cord. You may want to use a utility clip to secure the USB cord to a ledge, or perhaps the best way to hang your sensor is to secure the USB cord to an object inside your dwelling and hang the sensor out your window. At SEEED, the sensor hangs from an office window, the USB cable was secured and wrapped around a table leg inside. There are many ingenious methods to make sure that your node does not fall down to the ground and cause a tragic, tragic accident—choose one of them.
 
-            ![image alt text](/images/image_18.png)
+![image alt text](/images/image_18.png)
 
 3. Once your sensor is installed, double check to make sure it is still uploading data online. Go to the URL in Step 25 to make sure data is still posting to the Localdata servers. If your sensor is not uploading data, it is probably too far away from your wifi router. Try moving the sensor closer to the wireless router. Unplug the USB cable from the power outlet to reset the Seeeduino.
 
