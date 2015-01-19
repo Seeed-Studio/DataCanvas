@@ -110,7 +110,7 @@ For this part, you might want to use some Velcro, 3M Dual Lock, or adhesive tape
 
 8. Give your board a catchy name, something that you will remember. Create a password that is at least eight characters. Select your Wifi network from the list of "Detected Wireless Networks," enter your Wifi network’s password.         
 
-**Note**: If you move your Seeeduino to another wifi network or encounter problems connecting to wifi, you will need to reset the Seeeduino’s wifi processor. The reset button for WiFi is located on the top left corner of the Seeeduino, opposite the USB connector. You can reset the Seeeduino’s network configuration by pressing the Wifi reset button for longer longer than 5 seconds, but less than 30, which will reboot the AR9331 wifi processor.  Unplug and replug the Seeeduino to reset it. Wait a minute or more for the WiFi configuration to reset. The Seeeduino will once again start its own Wifi network "Seeeduino-XXXXXXXXXXXX." Check your computer’s wifi settings and log on to the Seeeduino’s network, go to 192.168.240.1 in a browser, and configure the Seeeduino with the new network settings. If after completing these steps you are still having trouble accessing the Seeeduino, you will want to do a factory reset. To reset the Seeeduino to its default state: hold the Wifi reset button for more than 30 seconds, unplug and replug the Seeeduino, and wait a minute for it to boot up. After a factory reset the computer will be completely wiped--you will need to reupload any arduino code and reconfigure all Wifi settings.
+     `**Note**: If you move your Seeeduino to another wifi network or encounter problems connecting to wifi, you will need to reset the Seeeduino’s wifi processor. The reset button for WiFi is located on the top left corner of the Seeeduino, opposite the USB connector. You can reset the Seeeduino’s network configuration by pressing the Wifi reset button for longer longer than 5 seconds, but less than 30, which will reboot the AR9331 wifi processor.  Unplug and replug the Seeeduino to reset it. Wait a minute or more for the WiFi configuration to reset. The Seeeduino will once again start its own Wifi network "Seeeduino-XXXXXXXXXXXX." Check your computer’s wifi settings and log on to the Seeeduino’s network, go to 192.168.240.1 in a browser, and configure the Seeeduino with the new network settings. If after completing these steps you are still having trouble accessing the Seeeduino, you will want to do a factory reset. To reset the Seeeduino to its default state: hold the Wifi reset button for more than 30 seconds, unplug and replug the Seeeduino, and wait a minute for it to boot up. After a factory reset the computer will be completely wiped--you will need to reupload any arduino code and reconfigure all Wifi settings.`
 
 9. Click the "Configure and Restart" button. The Seeeduino will restart and connect to your personal wireless network.         
 
@@ -120,45 +120,45 @@ For this part, you might want to use some Velcro, 3M Dual Lock, or adhesive tape
 
 12. Locate the code resources you downloaded in Step 1 and open the sense_your_city.ino. It should open within the Arduino IDE.
 
-![image alt text](/images/image_6.png)
+![image alt text](/images/image_6.png)\
 
 13. Add the libraries in your sense_your_city folder to your local Arduino Library. The easiest way to do this is to directly copy the two folders located in sense_your_city/libraries to your Arduino’s local library folder. On OS X the local Arduino library is located at /Users/yourusername/Documents/Arduino/libraries.
 
-![image alt text](/images/image_7.png)
+![image alt text](/images/image_7.png)\
 
 14. The more common way to add libraries is to use the "Add Library..." function found in the “Sketch” menu in the Arduino IDE. Go to Sketch > Import Library... > Add Library... . 
 
-![image alt text](/images/image_8.png)
+![image alt text](/images/image_8.png)\
 
 15. Individually add both of the libraries located in the sense_your_city folder by selecting each folder individually and clicking "Choose." Go to Sketch > Import Library... > Add Library... to ensure that the libraries have been added successfully. You will also see message in the black console at the bottom of the Arduino IDE indicating success or that an error has occurred.
 
-![image alt text](/images/image_9.png)
+![image alt text](/images/image_9.png)\
 
 16. Confirm that the Arduino IDE is configured for your board. Go to Tools > Board > Arduino Yún.  
 
-![image alt text](/images/image_10.png)       
+![image alt text](/images/image_10.png)\       
 
 17. Confirm the correct communication Port. Go to Tools > Port > /dev/tty.usbmodemXXXX (Arduino Yún). Now, your Arduino IDE is properly configured to program your Seeeduino.
 
-![image alt text](/images/image_11.png)
+![image alt text](/images/image_11.png)\
 
 18. Make some necessary modifications to the sense_your_city.ino code.
 
-Insert the user ID and private key sent to you by Localdata in the space provided between the quotation marks at the top of the code.![image alt text](/images/image_12.png)
+Insert the user ID and private key sent to you by Localdata in the space provided between the quotation marks at the top of the code.![image alt text](/images/image_12.png)\
 
-19. Calculate your sensor’s GPS location by going to mygeoposition.com and entering the address where your sensor is installed. Click the "Calculate geodata" button. Click the “Copy (x,y)” button to copy your GPS coordinates and paste them into the Arduino IDE. ![image alt text](/images/image_13.png)       
+19. Calculate your sensor’s GPS location by going to mygeoposition.com and entering the address where your sensor is installed. Click the "Calculate geodata" button. Click the “Copy (x,y)” button to copy your GPS coordinates and paste them into the Arduino IDE. ![image alt text](/images/image_13.png)\    
 
 20. After pasting your coordinates, **make sure to reverse them so longitude is first and latitude is second.**
 
-![image alt text](/images/image_14.png)           
+![image alt text](/images/image_14.png)\           
 
 21. Click the check button at the top of the sense_your_city window to verify that the code modifications you made are OK. Next, click the play button to upload your code to the Seeeduino.
 
-![image alt text](/images/image_15.png)
+![image alt text](/images/image_15.png)\
 
 22. Go to Tools > Serial Monitor to open the serial monitor and make sure that everything is working.... If it is, you will see new window that contains incoming communication from the Seeeduino, including verification that you are uploading online — "Posting Data!"
 
-![image alt text](/images/image_16.png)
+![image alt text](/images/image_16.png)\
 
 23. Finally, check the Localdata site to verify that your code is uploading. In a web browser, go to the following address. 
 
@@ -166,7 +166,7 @@ Insert the user ID and private key sent to you by Localdata in the space provide
 
 Be sure to change YOUR_USER_ID_GOES_HERE to the user ID you received from Localdata. Press your browser’s reload button several times over the course of several minutes to make sure data is uploading online. Data should be uploading about every 30 seconds or so. If everything is working, do a super funky victory dance!                 
 ##IV. Node Installation
-![image alt text](/images/image_17.png)
+![image alt text](/images/image_17.png)\
 
 After we have confirmed that our sensor is successfully uploading data to the web, we are ready to install it outside. Place the sensor somewhere interesting - a busy street corner, near a public transit station, next to a public park, etc. Make sure the sensor is always safe from harsh weather conditions. If terrible weather is in the local forecast, it is probably a good idea to unplug or move your sensor somewhere safer. If you do decide to move your sensor, don’t forget to reconfigure the wireless settings and make sure to update your new GPS coordinates in the sense_your_city.ino Arduino code.
 
@@ -174,7 +174,7 @@ After we have confirmed that our sensor is successfully uploading data to the we
 
 2. Install your sensor outside, hanging it from the USB cord. You may want to use a utility clip to secure the USB cord to a ledge, or perhaps the best way to hang your sensor is to secure the USB cord to an object inside your dwelling and hang the sensor out your window. At SEEED, the sensor hangs from an office window, the USB cable was secured and wrapped around a table leg inside. There are many ingenious methods to make sure that your node does not fall down to the ground and cause a tragic, tragic accident—choose one of them.
 
-![image alt text](/images/image_18.png)
+![image alt text](/images/image_18.png)\
 
 3. Once your sensor is installed, double check to make sure it is still uploading data online. Go to the URL in Step 25 to make sure data is still posting to the Localdata servers. If your sensor is not uploading data, it is probably too far away from your wifi router. Try moving the sensor closer to the wireless router. Unplug the USB cable from the power outlet to reset the Seeeduino.
 
