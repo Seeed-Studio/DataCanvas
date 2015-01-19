@@ -37,9 +37,9 @@
 /* User Configuration */
 #define USER_ID             "USER_ID_GOES_HERE" 
 #define PRIVATE_KEY         "PRIVATE_KEY_GOES_HERE"
-#define LNGLAT              "[37.7902370,-122.2300810]"    // Get your LONGITUDE, LATITUDE at http://mygeoposition.com/
+#define LNGLAT              "[LONGITUDE, LATITUDE]"    // Get your LONGITUDE, LATITUDE at http://mygeoposition.com/
 
-// Check your data --> https://localdata-sensors.herokuapp.com/api/sources/USER_ID_GOES_HERE/entries?startIndex=0&count=100000 
+// Check your data --> http://localdata-sensors.herokuapp.com/api/v1/sources/USER_ID_GOES_HERE/entries?startIndex=0&count=5&sort=desc
 
 /*Define sensor locations on Grove */
 #define pin_uv              A2      // UV sensor
