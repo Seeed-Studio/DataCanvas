@@ -26,11 +26,14 @@ You should have the following:
 2. Find the switch on the Grove Base Shield and make sure it is switched to "5V." This indicates that we will be powering all sensors with five volts of electricity.
 
 3. Plug a jumper cable into each of the Grove sensors.The cable only fits one way so don’t force anything.
-
-4. Once all the sensors are connected to cables, plug the other ends into the Grove Shield. Each sensor has a specific, labelled port that we will plug it into.  
       ![image alt text](/images/image_2.png)
 
-<p style='text-align: center;'>
+4. Once all the sensors are connected to cables, plug the other ends into the Grove Shield. Each sensor has a specific, labelled port that we will plug it into. See the chart below for reference.   
+
+6. We have three different types of sensors. Some sensors are Analog, hence the "A" labeled ports. Analog sensors output a voltage between 0V and 5V, and we use that output to deduce the physical input to the sensor. Some sensors of our sensors are Digital, hence the “D” labelled ports. Digital sensors output data in 1’s and 0’s that computers, such as our Seeeduino, can easily understand. Finally, some sensors communicate over I2C, which allows bidirectional communication between the sensor and the computer.
+
+7. Plug the micro USB cable into the Seeeduino. The small end of the Micro USB cable goes into the red Seeeduino. Later on, we will plug the other end into our computer to program our Seeeduino.
+
 <table>
   <tr>
     <td>Sensor</td>
@@ -60,15 +63,10 @@ You should have the following:
     <td>Dust Sensor </td>
     <td>D7</td>
   </tr>
-</table> </p>
+</table> 
 
-6. We have three different types of sensors. Some sensors are Analog, hence the "A" labeled ports. Analog sensors output a voltage between 0V and 5V, and we use that output to deduce the physical input to the sensor. Some sensors of our sensors are Digital, hence the “D” labelled ports. Digital sensors output data in 1’s and 0’s that computers, such as our Seeeduino, can easily understand. Finally, some sensors communicate over I2C, which allows bidirectional communication between the sensor and the computer.
-
-7. Plug the micro USB cable into the Seeeduino. The small end of the Micro USB cable goes into the red Seeeduino. Later on, we will plug the other end into our computer to program our Seeeduino.          
-
+##II. Install the sensor in the case     
      ![image alt text](/images/image_3.png)
-
-##II. Install the sensor in the case
 
 For this part, you might want to use some Velcro, 3M Dual Lock, or adhesive tape to keep your sensors in place. You don’t need any of these supplies, but they will make your housing more secure and neat. For your reference, the top of the plastic housing has a tab with three small holes, the bottom of the housing has two large holes. This housing will protect our electronics from water and weather, but will also allow our sensors to measure the environment outside the case, through the two large holes on the bottom.
 
@@ -92,7 +90,7 @@ For this part, you might want to use some Velcro, 3M Dual Lock, or adhesive tape
 
 9. Use a wire tie, string, or tape to attach the USB cable to the middle tab at the top of the case. The sensor will should be able to hang vertically from the USB cable. We don’t want it to turn upside down and expose the vulnerable sensors on the outside of the case to water or harsh weather. Make sure the USB cable is well secured between two of the three holes. For extra precaution, you can tape the Micro USB cable to the back of the senso 
 
-##III. Program the sensor node!
+##III. Program the sensor node!     
      [image alt text](/images/image_5.png)
 
 1. Before getting started, download the code resources at: [https://github.com/Seeed-Studio/DataCanvas/archive/master.zip](https://github.com/Seeed-Studio/DataCanvas/archive/master.zip)
