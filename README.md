@@ -286,5 +286,5 @@ If you have verified that your sensor is up and running, do a celebratory victor
 
 # Troubleshooting:
 
-If you encounter any problems connecting your sensor to your wifi network: hold the button on the top left hand corner (opposite the ethernet port) of the Seeeduino to reset it to its factory settings. Consult the "Program Your Sensor" section on how to reconfigure your wifi settings. 
+If you encounter any problems connecting your sensor to your wifi network: hold the button on the top left hand corner (opposite the ethernet port) of the Seeeduino for more than 30 seconds to reset factory settings. Then unplug it and plug it in again. More detailed info avaiable in a [Facebook Group comment](https://www.facebook.com/groups/datacanvas/permalink/412028692296231/). Consult the "Program Your Sensor" section on how to reconfigure your wifi settings. 
 
