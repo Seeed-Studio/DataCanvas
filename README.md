@@ -1,7 +1,7 @@
-![image alt text](/images/image_0.png)
+![image alt text](/images/image_0.png)  
 #Sense Your City Sensor Instructions 
 
-##What’s in the box:                  
+##What’s in the box:
 
 You should have the following:
 
@@ -27,8 +27,10 @@ You should have the following:
 
 3. Plug a jumper cable into each of the Grove sensors.The cable only fits one way so don’t force anything.
 
-4. Once all the sensors are connected to cables, plug the other ends into the Grove Shield. Each sensor has a specific, labelled port that we will plug it into.
+4. Once all the sensors are connected to cables, plug the other ends into the Grove Shield. Each sensor has a specific, labelled port that we will plug it into.  
+      ![image alt text](/images/image_2.png)
 
+<p style='text-align: center;'>
 <table>
   <tr>
     <td>Sensor</td>
@@ -58,15 +60,13 @@ You should have the following:
     <td>Dust Sensor </td>
     <td>D7</td>
   </tr>
-</table>
-
-![image alt text](/images/image_2.png)
+</table> </p>
 
 6. We have three different types of sensors. Some sensors are Analog, hence the "A" labeled ports. Analog sensors output a voltage between 0V and 5V, and we use that output to deduce the physical input to the sensor. Some sensors of our sensors are Digital, hence the “D” labelled ports. Digital sensors output data in 1’s and 0’s that computers, such as our Seeeduino, can easily understand. Finally, some sensors communicate over I2C, which allows bidirectional communication between the sensor and the computer.
 
 7. Plug the micro USB cable into the Seeeduino. The small end of the Micro USB cable goes into the red Seeeduino. Later on, we will plug the other end into our computer to program our Seeeduino.          
 
-![image alt text](/images/image_3.png)
+     ![image alt text](/images/image_3.png)
 
 ##II. Install the sensor in the case
 
@@ -86,13 +86,14 @@ For this part, you might want to use some Velcro, 3M Dual Lock, or adhesive tape
 
 7. Find the antenna—it’s the circuit board hanging freely from the Seeeduino, peel off the adhesive backing and attach it to the inside of the case. 
 
-8. Once all of the sensors are in place, double check that all of the white connectors are securely plugged in. Slide on the front cover of the housing. If the case does not slide on easily, you will need to tidy up your wires. Make sure that the UV and Light sensors’ jumper cables fit in the notches on the bottom of the housing. If the wires inside the housing are a mess, you can fold them and tape them together, or to parts of the case, so that they look neater and fit better. If possible, use several different colors of tape to do this, so that it will be easier to identify which wire is which incase you need to troubleshoot.
-
-![image alt text](/images/image_4.png)
+8. Once all of the sensors are in place, double check that all of the white connectors are securely plugged in. Slide on the front cover of the housing. If the case does not slide on easily, you will need to tidy up your wires. Make sure that the UV and Light sensors’ jumper cables fit in the notches on the bottom of the housing. If the wires inside the housing are a mess, you can fold them and tape them together, or to parts of the case, so that they look neater and fit better. If possible, use several different colors of tape to do this, so that it will be easier to identify which wire is which incase you need to troubleshoot. 
+   
+ ![image alt text](/images/image_4.png)
 
 9. Use a wire tie, string, or tape to attach the USB cable to the middle tab at the top of the case. The sensor will should be able to hang vertically from the USB cable. We don’t want it to turn upside down and expose the vulnerable sensors on the outside of the case to water or harsh weather. Make sure the USB cable is well secured between two of the three holes. For extra precaution, you can tape the Micro USB cable to the back of the senso 
 
-##III. Program the sensor node![image alt text](/images/image_5.png)
+##III. Program the sensor node!
+     [image alt text](/images/image_5.png)
 
 1. Before getting started, download the code resources at: [https://github.com/Seeed-Studio/DataCanvas/archive/master.zip](https://github.com/Seeed-Studio/DataCanvas/archive/master.zip)
 
@@ -118,63 +119,54 @@ For this part, you might want to use some Velcro, 3M Dual Lock, or adhesive tape
 
 11. Once connected, direct your web browser to: yourseeduinoscatchyname.local. You should see the same Arduino interface as before, but this time on your own wireless network. You can also direct your browser to the Seeeduino’s default IP address: 192.168.240.1.
 
-12. Locate the code resources you downloaded in Step 1 and open the sense_your_city.ino. It should open within the Arduino IDE.
+12. Locate the code resources you downloaded in Step 1 and open the sense_your_city.ino. It should open within the Arduino IDE.  
+    ![image alt text](/images/image_6.png)
 
-![image alt text](/images/image_6.png)\
+13. Add the libraries in your sense_your_city folder to your local Arduino Library. The easiest way to do this is to directly copy the two folders located in sense_your_city/libraries to your Arduino’s local library folder. On OS X the local Arduino library is located at /Users/yourusername/Documents/Arduino/libraries.  
+    ![image alt text](/images/image_7.png)
 
-13. Add the libraries in your sense_your_city folder to your local Arduino Library. The easiest way to do this is to directly copy the two folders located in sense_your_city/libraries to your Arduino’s local library folder. On OS X the local Arduino library is located at /Users/yourusername/Documents/Arduino/libraries.
+14. The more common way to add libraries is to use the "Add Library..." function found in the “Sketch” menu in the Arduino IDE. Go to Sketch > Import Library... > Add Library... 
+    ![image alt text](/images/image_8.png)
 
-![image alt text](/images/image_7.png)\
-
-14. The more common way to add libraries is to use the "Add Library..." function found in the “Sketch” menu in the Arduino IDE. Go to Sketch > Import Library... > Add Library... . 
-
-![image alt text](/images/image_8.png)\
-
-15. Individually add both of the libraries located in the sense_your_city folder by selecting each folder individually and clicking "Choose." Go to Sketch > Import Library... > Add Library... to ensure that the libraries have been added successfully. You will also see message in the black console at the bottom of the Arduino IDE indicating success or that an error has occurred.
-
-![image alt text](/images/image_9.png)\
+15. Individually add both of the libraries located in the sense_your_city folder by selecting each folder individually and clicking "Choose." Go to Sketch > Import Library... > Add Library... to ensure that the libraries have been added successfully. You will also see message in the black console at the bottom of the Arduino IDE indicating success or that an error has occurred.  
+    ![image alt text](/images/image_9.png)
 
 16. Confirm that the Arduino IDE is configured for your board. Go to Tools > Board > Arduino Yún.  
+     ![image alt text](/images/image_10.png)   
 
-![image alt text](/images/image_10.png)\       
+17. Confirm the correct communication Port. Go to Tools > Port > /dev/tty.usbmodemXXXX (Arduino Yún). Now, your Arduino IDE is properly configured to program your Seeeduino.  
+     ![image alt text](/images/image_11.png)
 
-17. Confirm the correct communication Port. Go to Tools > Port > /dev/tty.usbmodemXXXX (Arduino Yún). Now, your Arduino IDE is properly configured to program your Seeeduino.
+18. Make some necessary modifications to the sense_your_city.ino code. Insert the user ID and private key sent to you by Localdata in the space provided between the quotation marks at the top of the code.  
+     ![image alt text](/images/image_12.png)
 
-![image alt text](/images/image_11.png)\
+19. Calculate your sensor’s GPS location by going to mygeoposition.com and entering the address where your sensor is installed. Click the "Calculate geodata" button. Click the “Copy (x,y)” button to copy your GPS coordinates and paste them into the Arduino IDE.     
+     ![image alt text](/images/image_13.png)
 
-18. Make some necessary modifications to the sense_your_city.ino code.
+20. After pasting your coordinates, **make sure to reverse them so longitude is first and latitude is second.**  
+     ![image alt text](/images/image_14.png)      
 
-Insert the user ID and private key sent to you by Localdata in the space provided between the quotation marks at the top of the code.![image alt text](/images/image_12.png)\
+21. Click the check button at the top of the sense_your_city window to verify that the code modifications you made are OK. Next, click the play button to upload your code to the Seeeduino.  
+     ![image alt text](/images/image_15.png)
 
-19. Calculate your sensor’s GPS location by going to mygeoposition.com and entering the address where your sensor is installed. Click the "Calculate geodata" button. Click the “Copy (x,y)” button to copy your GPS coordinates and paste them into the Arduino IDE. ![image alt text](/images/image_13.png)\    
-
-20. After pasting your coordinates, **make sure to reverse them so longitude is first and latitude is second.**
-
-![image alt text](/images/image_14.png)\           
-
-21. Click the check button at the top of the sense_your_city window to verify that the code modifications you made are OK. Next, click the play button to upload your code to the Seeeduino.
-
-![image alt text](/images/image_15.png)\
-
-22. Go to Tools > Serial Monitor to open the serial monitor and make sure that everything is working.... If it is, you will see new window that contains incoming communication from the Seeeduino, including verification that you are uploading online — "Posting Data!"
-
-![image alt text](/images/image_16.png)\
+22. Go to Tools > Serial Monitor to open the serial monitor and make sure that everything is working.... If it is, you will see new window that contains incoming communication from the Seeeduino, including verification that you are uploading online — "Posting Data!"  
+     ![image alt text](/images/image_16.png)
 
 23. Finally, check the Localdata site to verify that your code is uploading. In a web browser, go to the following address. 
 
-[http://localdata-sensors.herokuapp.com/api/v1/sources/](http://localdata-sensors.herokuapp.com/api/v1/sources/)**[USER_ID_GOES_HER**E](http://localdata-sensors.herokuapp.com/api/v1/sources/)[/entries?startIndex=0&count=5&sort=](http://localdata-sensors.herokuapp.com/api/v1/sources/)**[des**c](http://localdata-sensors.herokuapp.com/api/v1/sources/)
+[http://localdata-sensors.herokuapp.com/api/v1/sources/USER_ID_GOES_HERE/entries?startIndex=0&count=5&sort=desc](http://localdata-sensors.herokuapp.com/api/v1/sources/USER_ID_GOES_HERE/entries?startIndex=0&count=5&sort=desc)
 
 Be sure to change YOUR_USER_ID_GOES_HERE to the user ID you received from Localdata. Press your browser’s reload button several times over the course of several minutes to make sure data is uploading online. Data should be uploading about every 30 seconds or so. If everything is working, do a super funky victory dance!                 
+
 ##IV. Node Installation
-![image alt text](/images/image_17.png)\
+   ![image alt text](/images/image_17.png)
 
 After we have confirmed that our sensor is successfully uploading data to the web, we are ready to install it outside. Place the sensor somewhere interesting - a busy street corner, near a public transit station, next to a public park, etc. Make sure the sensor is always safe from harsh weather conditions. If terrible weather is in the local forecast, it is probably a good idea to unplug or move your sensor somewhere safer. If you do decide to move your sensor, don’t forget to reconfigure the wireless settings and make sure to update your new GPS coordinates in the sense_your_city.ino Arduino code.
 
 1. Unplug the Seeeduino’s USB cable from your computer and power the sensor from a power outlet. You can also use any standard USB port to supply your sensor with power, just make sure the Seeeduino is always powered and check on it from time to time. You can tell if the Seeeduino is powered by looking into the bottom holes of your housing. You should always see some LEDs blinking inside the case.
 
-2. Install your sensor outside, hanging it from the USB cord. You may want to use a utility clip to secure the USB cord to a ledge, or perhaps the best way to hang your sensor is to secure the USB cord to an object inside your dwelling and hang the sensor out your window. At SEEED, the sensor hangs from an office window, the USB cable was secured and wrapped around a table leg inside. There are many ingenious methods to make sure that your node does not fall down to the ground and cause a tragic, tragic accident—choose one of them.
-
-![image alt text](/images/image_18.png)\
+2. Install your sensor outside, hanging it from the USB cord. You may want to use a utility clip to secure the USB cord to a ledge, or perhaps the best way to hang your sensor is to secure the USB cord to an object inside your dwelling and hang the sensor out your window. At SEEED, the sensor hangs from an office window, the USB cable was secured and wrapped around a table leg inside. There are many ingenious methods to make sure that your node does not fall down to the ground and cause a tragic, tragic accident—choose one of them.  
+     ![image alt text](/images/image_18.png)
 
 3. Once your sensor is installed, double check to make sure it is still uploading data online. Go to the URL in Step 25 to make sure data is still posting to the Localdata servers. If your sensor is not uploading data, it is probably too far away from your wifi router. Try moving the sensor closer to the wireless router. Unplug the USB cable from the power outlet to reset the Seeeduino.
 
@@ -188,4 +180,3 @@ Troubleshooting:
 If you have any questions or run into roadblocks, check the FAQ at [http://datacanvas.org/sense-your-city/ ](http://datacanvas.org/sense-your-city/)
 
 You can also post questions in the Facebook group listed above.
-
