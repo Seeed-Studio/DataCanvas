@@ -175,6 +175,7 @@ Follow along with the project at DataCanvas.org to see how artists, developers, 
 
 Troubleshooting:          
 
-If you have any questions or run into roadblocks, check the FAQ at [http://datacanvas.org/sense-your-city/ ](http://datacanvas.org/sense-your-city/)
+If you encounter any problems connecting your sensor to your wifi network: hold the button on the top left hand corner (opposite the ethernet port) of the Seeeduino for more than 30 seconds to reset factory settings. Then unplug it and plug it in again. More detailed info avaiable in a [Facebook Group comment](https://www.facebook.com/groups/datacanvas/permalink/412028692296231/). Consult the "Program Your Sensor" section on how to reconfigure your wifi settings. 
+
 
 You can also post questions in the Facebook group listed above.
