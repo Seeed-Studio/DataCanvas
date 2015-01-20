@@ -179,3 +179,5 @@ If you encounter any problems connecting your sensor to your wifi network: hold 
 
 
 You can also post questions in the Facebook group listed above.
+
+[![Analytics](https://ga-beacon.appspot.com/UA-46589105-3/DataCanvas)](https://github.com/igrigorik/ga-beacon)
