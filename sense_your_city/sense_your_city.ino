@@ -213,6 +213,7 @@ void loop()
   //Wait two seconds to evaluate Air Quality sensor's outputs
   if (air_quality_sensor_state == AQ_WORK && (millis() - air_quality_sensor_evaluate_starttime) > 2000)
   {
+    air_quality_sensor_evaluate_starttime = millis();
     air_quality_sensor_evaluation();
   }
   
